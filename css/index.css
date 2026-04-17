@@ -454,66 +454,86 @@ h6 {
   padding-block: var(--pad);
   background-color: var(--dark-900);
 }
-#main #OUR-TEAM .container .row > div .inner:hover .layer {
-  inset: 0 0 0 0;
+#main #OUR-TEAM .container .row > div .inner:hover .layer-2 {
+  clip-path: inset(0 0 0 0);
 }
-#main #OUR-TEAM .container .row > div .inner img:first-child {
-  filter: grayscale(100%);
+#main #OUR-TEAM .container .row > div .inner .layers img {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
-#main #OUR-TEAM .container .row > div .inner .layer {
-  inset: 100% 0 0 0;
-  transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-#main #OUR-TEAM .container .row > div .inner:hover h4 {
-  color: white;
-}
-#main #OUR-TEAM .container .row > div .inner:hover p {
-  color: var(--lime-500) !important;
-}
-#main #OUR-TEAM .container .row > div .inner:hover span {
-  color: var(--gray-400) !important;
-}
-#main #OUR-TEAM .container .row > div .inner .layer-content {
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content {
   bottom: 1.25rem;
-  left: 1.25rem;
-  right: 1.25rem;
+  left: 1rem;
+  right: 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
-#main #OUR-TEAM .container .row > div .inner .layer-content p,
-#main #OUR-TEAM .container .row > div .inner .layer-content h4 {
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content p,
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content h4 {
   margin-bottom: 0;
   transition: 0.5s;
 }
-#main #OUR-TEAM .container .row > div .inner .layer-content .left h4 {
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content .left h4 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
 }
-#main #OUR-TEAM .container .row > div .inner .layer-content .left p {
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content .left p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
   color: #b5b5b5;
   margin-block: 0.3125rem -0.3125rem;
 }
-#main #OUR-TEAM .container .row > div .inner .layer-content .left span {
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content .left span {
   font-size: 0.75rem;
   font-weight: 400;
   color: #818181;
   transition: 0.5s;
 }
-#main #OUR-TEAM .container .row > div .inner .layer-content p:last-child {
+#main #OUR-TEAM .container .row > div .inner .layers .layer-content p:last-child {
+  position: absolute;
+  top: 32%;
+  left: 80%;
+  transform: translateY(-50%);
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
   color: #b5b5b5;
   transform: rotate(90deg);
   width: -moz-fit-content;
-  width: fit-content;
   display: inline-block;
   margin-right: -1.3125rem;
+}
+#main #OUR-TEAM .container .row > div .inner .layer-1 {
+  position: relative;
+  filter: grayscale(100%);
+  z-index: 2;
+}
+#main #OUR-TEAM .container .row > div .inner .layer-2 {
+  position: absolute;
+  clip-path: inset(100% 0 0 0);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  transition: 0.6s;
+}
+#main #OUR-TEAM .container .row > div .inner .layer-2 .left h4 {
+  color: white;
+}
+#main #OUR-TEAM .container .row > div .inner .layer-2 .left p {
+  color: var(--lime-500) !important;
+}
+#main #OUR-TEAM .container .row > div .inner .layer-2 .left span {
+  color: var(--gray-400) !important;
+}
+#main #OUR-TEAM .container .row > div .inner .layer-2 p:last-child {
+  color: var(--lime-500) !important;
+}
+#main #OUR-TEAM .container .row > div:not(#main #OUR-TEAM .container .row > div:first-child) .inner .layers .layer-content p:last-child {
+  left: 85%;
 }
 #main #CONTACT-US {
   padding-block: var(--pad);

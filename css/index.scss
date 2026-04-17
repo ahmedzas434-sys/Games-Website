@@ -40,7 +40,7 @@
   color: var(--dark-900);
 }
 
-html{
+html {
   scroll-padding-top: 4.6rem;
 }
 
@@ -60,12 +60,12 @@ h6 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 0.625rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   & > span:first-child {
     font-size: 1rem;
@@ -82,21 +82,21 @@ h6 {
       border-radius: 62.4375rem;
       top: 50%;
       -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
 
     &::after {
+      background-image: -o-linear-gradient(
+        left,
+        var(--lime-500) 0% 50%,
+        transparent
+      );
       background-image: -webkit-gradient(
         linear,
         left top, right top,
         from(var(--lime-500)),
         to(transparent)
-      );
-      background-image: -o-linear-gradient(
-        left,
-        var(--lime-500) 0% 50%,
-        transparent
       );
       background-image: linear-gradient(
         to right,
@@ -105,21 +105,21 @@ h6 {
       );
       right: 0;
       -webkit-transform: translate(calc(100% + 0.9375rem), -50%);
-          -ms-transform: translate(calc(100% + 0.9375rem), -50%);
-              transform: translate(calc(100% + 0.9375rem), -50%);
+      -ms-transform: translate(calc(100% + 0.9375rem), -50%);
+      transform: translate(calc(100% + 0.9375rem), -50%);
     }
 
     &::before {
+      background-image: -o-linear-gradient(
+        right,
+        var(--lime-500) 0% 50%,
+        transparent
+      );
       background-image: -webkit-gradient(
         linear,
         right top, left top,
         from(var(--lime-500)),
         to(transparent)
-      );
-      background-image: -o-linear-gradient(
-        right,
-        var(--lime-500) 0% 50%,
-        transparent
       );
       background-image: linear-gradient(
         to left,
@@ -128,8 +128,8 @@ h6 {
       );
       left: 0;
       -webkit-transform: translate(calc(-100% - 0.9375rem), -50%);
-          -ms-transform: translate(calc(-100% - 0.9375rem), -50%);
-              transform: translate(calc(-100% - 0.9375rem), -50%);
+      -ms-transform: translate(calc(-100% - 0.9375rem), -50%);
+      transform: translate(calc(-100% - 0.9375rem), -50%);
     }
   }
 
@@ -179,7 +179,7 @@ h6 {
       color: white !important;
       border: none;
       -webkit-box-shadow: none;
-              box-shadow: none;
+      box-shadow: none;
 
       &:hover {
         color: var(--lime-500) !important;
@@ -232,8 +232,8 @@ h6 {
           &::after {
             content: "";
             position: absolute;
-            background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
             background: -o-linear-gradient(left, #0000, #fff6, #0000);
+            background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
             background: linear-gradient(90deg, #0000, #fff6, #0000);
             height: 100%;
             width: 100%;
@@ -253,9 +253,9 @@ h6 {
 #main {
   #header {
     background-image:
-      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85))), url(../images/image01.jpg);
-    background-image:
       -o-linear-gradient(rgba(0, 0, 0, 0.85)), url(../images/image01.jpg);
+    background-image:
+      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85))), url(../images/image01.jpg);
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.85)), url(../images/image01.jpg);
     background-position: center center;
@@ -310,8 +310,8 @@ h6 {
               &::after {
                 content: "";
                 position: absolute;
-                background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
                 background: -o-linear-gradient(left, #0000, #fff6, #0000);
+                background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
                 background: linear-gradient(90deg, #0000, #fff6, #0000);
                 height: 100%;
                 width: 100%;
@@ -343,16 +343,16 @@ h6 {
           picture {
             padding: 0.1875rem;
             height: 25rem;
+            background-image: -o-linear-gradient(
+              left,
+              var(--lime-500),
+              var(--green-500)
+            );
             background-image: -webkit-gradient(
               linear,
               left top, right top,
               from(var(--lime-500)),
               to(var(--green-500))
-            );
-            background-image: -o-linear-gradient(
-              left,
-              var(--lime-500),
-              var(--green-500)
             );
             background-image: linear-gradient(
               to right,
@@ -368,8 +368,8 @@ h6 {
 
           .cardHeader {
             -webkit-transform: translate(-1.5625rem, -3.75rem);
-                -ms-transform: translate(-1.5625rem, -3.75rem);
-                    transform: translate(-1.5625rem, -3.75rem);
+            -ms-transform: translate(-1.5625rem, -3.75rem);
+            transform: translate(-1.5625rem, -3.75rem);
             background-color: var(--dark-900);
             padding: 1.25rem 1.75rem;
             border: 0.0625rem solid var(--gray-700);
@@ -423,7 +423,7 @@ h6 {
 
                   img {
                     -o-object-position: center;
-                       object-position: center;
+                    object-position: center;
                     -webkit-transition: 0.5s;
                     -o-transition: 0.5s;
                     transition: 0.5s;
@@ -431,21 +431,21 @@ h6 {
 
                   &:hover img {
                     -webkit-transform: scale(1.08);
-                        -ms-transform: scale(1.08);
-                            transform: scale(1.08);
+                    -ms-transform: scale(1.08);
+                    transform: scale(1.08);
                   }
 
                   .layer-content {
                     inset: 0;
+                    background-image: -o-linear-gradient(
+                      transparent 40%,
+                      var(--lime-500)
+                    );
                     background-image: -webkit-gradient(
                       linear,
                       left top, left bottom,
                       color-stop(40%, transparent),
                       to(var(--lime-500))
-                    );
-                    background-image: -o-linear-gradient(
-                      transparent 40%,
-                      var(--lime-500)
                     );
                     background-image: linear-gradient(
                       transparent 40%,
@@ -458,8 +458,8 @@ h6 {
 
                     .top {
                       -webkit-transform: translateY(-6.25rem);
-                          -ms-transform: translateY(-6.25rem);
-                              transform: translateY(-6.25rem);
+                      -ms-transform: translateY(-6.25rem);
+                      transform: translateY(-6.25rem);
                       -webkit-transition: 0.5s;
                       -o-transition: 0.5s;
                       transition: 0.5s;
@@ -468,7 +468,7 @@ h6 {
                         color: var(--gray-100);
                         background-color: rgba(0, 0, 0, 0.511);
                         -webkit-backdrop-filter: blur(1.25rem);
-                                backdrop-filter: blur(1.25rem);
+                        backdrop-filter: blur(1.25rem);
                         padding: 0.1875rem 0.9375rem;
                         font-size: 0.75rem;
                         font-weight: 600;
@@ -485,8 +485,8 @@ h6 {
                       font-size: 1.125rem;
                       font-weight: 700;
                       -webkit-transform: translateY(12.5rem);
-                          -ms-transform: translateY(12.5rem);
-                              transform: translateY(12.5rem);
+                      -ms-transform: translateY(12.5rem);
+                      transform: translateY(12.5rem);
                       max-width: 85%;
                       -webkit-transition: 0.5s;
                       -o-transition: 0.5s;
@@ -496,8 +496,8 @@ h6 {
                     &:hover span,
                     &:hover .top {
                       -webkit-transform: translateY(0);
-                          -ms-transform: translateY(0);
-                              transform: translateY(0);
+                      -ms-transform: translateY(0);
+                      transform: translateY(0);
                     }
                   }
 
@@ -578,15 +578,15 @@ h6 {
 
             &:hover .layer-1 {
               -webkit-transform: translate(60%, 60%);
-                  -ms-transform: translate(60%, 60%);
-                      transform: translate(60%, 60%);
+              -ms-transform: translate(60%, 60%);
+              transform: translate(60%, 60%);
               opacity: 1;
             }
 
             &:hover .layer-2 {
               -webkit-transform: translate(-60%, -60%);
-                  -ms-transform: translate(-60%, -60%);
-                      transform: translate(-60%, -60%);
+              -ms-transform: translate(-60%, -60%);
+              transform: translate(-60%, -60%);
               opacity: 1;
             }
 
@@ -611,8 +611,8 @@ h6 {
               height: 0;
               border-style: solid;
               -webkit-transform: rotate(0deg);
-                  -ms-transform: rotate(0deg);
-                      transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+              transform: rotate(0deg);
               opacity: 0;
             }
 
@@ -622,8 +622,8 @@ h6 {
               top: 0;
               left: 0;
               -webkit-transform: translate(-100%, -100%);
-                  -ms-transform: translate(-100%, -100%);
-                      transform: translate(-100%, -100%);
+              -ms-transform: translate(-100%, -100%);
+              transform: translate(-100%, -100%);
             }
 
             .layer-2 {
@@ -632,8 +632,8 @@ h6 {
               bottom: 0;
               right: 0;
               -webkit-transform: translate(100%, 100%);
-                  -ms-transform: translate(100%, 100%);
-                      transform: translate(100%, 100%);
+              -ms-transform: translate(100%, 100%);
+              transform: translate(100%, 100%);
             }
           }
         }
@@ -660,11 +660,11 @@ h6 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 1.25rem;
 
     &::after {
@@ -672,6 +672,13 @@ h6 {
       position: absolute;
       width: 37.5rem;
       height: 0.125rem;
+      background-image: -o-linear-gradient(
+        left,
+        transparent,
+        var(--lime-500) 10%,
+        var(--lime-500) 90%,
+        transparent
+      );
       background-image: -webkit-gradient(
         linear,
         left top, right top,
@@ -679,13 +686,6 @@ h6 {
         color-stop(10%, var(--lime-500)),
         color-stop(90%, var(--lime-500)),
         to(transparent)
-      );
-      background-image: -o-linear-gradient(
-        left,
-        transparent,
-        var(--lime-500) 10%,
-        var(--lime-500) 90%,
-        transparent
       );
       background-image: linear-gradient(
         90deg,
@@ -697,10 +697,10 @@ h6 {
       left: 50%;
       top: 0;
       -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
       -webkit-box-shadow: 0rem 0rem 0.625rem 0.125rem var(--lime-500);
-              box-shadow: 0rem 0rem 0.625rem 0.125rem var(--lime-500);
+      box-shadow: 0rem 0rem 0.625rem 0.125rem var(--lime-500);
     }
 
     .scroll {
@@ -723,7 +723,7 @@ h6 {
         rgba(0, 0, 0, 1) 80%,
         transparent
       );
-              mask-image: -webkit-gradient(
+      mask-image: -webkit-gradient(
         linear,
         left top, right top,
         from(transparent),
@@ -731,7 +731,7 @@ h6 {
         color-stop(80%, rgba(0, 0, 0, 1)),
         to(transparent)
       );
-              mask-image: linear-gradient(
+      mask-image: linear-gradient(
         to right,
         transparent,
         rgba(0, 0, 0, 1) 20%,
@@ -744,11 +744,11 @@ h6 {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         gap: 0.9375rem;
         padding-right: 0.9375rem;
 
@@ -762,17 +762,17 @@ h6 {
     .scroll-1 {
       .group {
         -webkit-animation: spin_R_TO_L 20s linear infinite;
-                animation: spin_R_TO_L 20s linear infinite;
+        animation: spin_R_TO_L 20s linear infinite;
       }
     }
 
     .scroll-2 {
       .group {
         -webkit-transform: translateX(-100%);
-            -ms-transform: translateX(-100%);
-                transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
         -webkit-animation: spin_L_TO_R 20s linear infinite;
-                animation: spin_L_TO_R 20s linear infinite;
+        animation: spin_L_TO_R 20s linear infinite;
       }
     }
   }
@@ -785,97 +785,134 @@ h6 {
       .row {
         & > div {
           .inner {
-            &:hover .layer {
-              inset: 0 0 0 0;
+            &:hover .layer-2 {
+              -webkit-clip-path: inset(0 0 0 0);
+                      clip-path: inset(0 0 0 0);
             }
 
-            img:first-child {
-              -webkit-filter: grayscale(100%);
-                      filter: grayscale(100%);
-            }
-
-            .layer {
-              inset: 100% 0 0 0;
-              -webkit-transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-              -o-transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-              transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-
-            &:hover h4 {
-              color: white;
-            }
-
-            &:hover p {
-              color: var(--lime-500) !important;
-            }
-
-            &:hover span {
-              color: var(--gray-400) !important;
-            }
-
-            .layer-content {
-              bottom: 1.25rem;
-              left: 1.25rem;
-              right: 1.25rem;
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-pack: justify;
-                  -ms-flex-pack: justify;
-                      justify-content: space-between;
-              -webkit-box-align: center;
-                  -ms-flex-align: center;
-                      align-items: center;
-
-              p,
-              h4 {
-                margin-bottom: 0;
-                -webkit-transition: 0.5s;
-                -o-transition: 0.5s;
-                transition: 0.5s;
+            .layers {
+              img {
+                width: 100%;
+                aspect-ratio: 1/1;
               }
 
-              .left {
+              .layer-content {
+                bottom: 1.25rem;
+                left: 1rem;
+                right: 1rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: flex-end;
+                -ms-flex-align: flex-end;
+                align-items: flex-end;
+
+                p,
                 h4 {
-                  font-size: 1.25rem;
-                  line-height: 1.75rem;
-                  font-weight: 700;
-                }
-
-                p {
-                  font-size: 0.875rem;
-                  line-height: 1.25rem;
-                  font-weight: 400;
-                  color: #b5b5b5;
-                  margin-block: 0.3125rem -0.3125rem;
-                }
-
-                span {
-                  font-size: 0.75rem;
-                  font-weight: 400;
-                  color: #818181;
+                  margin-bottom: 0;
                   -webkit-transition: 0.5s;
                   -o-transition: 0.5s;
                   transition: 0.5s;
                 }
+
+                .left {
+                  h4 {
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                    font-weight: 700;
+                  }
+
+                  p {
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                    font-weight: 400;
+                    color: #b5b5b5;
+                    margin-block: 0.3125rem -0.3125rem;
+                  }
+
+                  span {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    color: #818181;
+                    -webkit-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    transition: 0.5s;
+                  }
+                }
+
+                p:last-child {
+                  position: absolute;
+                  top: 32%;
+                  left: 80%;
+                  -webkit-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                          transform: translateY(-50%);
+                  font-size: 1.125rem;
+                  line-height: 1.75rem;
+                  font-weight: 700;
+                  color: #b5b5b5;
+                  -webkit-transform: rotate(90deg);
+                  -ms-transform: rotate(90deg);
+                  transform: rotate(90deg);
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  display: inline-block;
+                  margin-right: -1.3125rem;
+                }
+              }
+            }
+
+            .layer-1 {
+              position: relative;
+              -webkit-filter: grayscale(100%);
+                      filter: grayscale(100%);
+              z-index: 2;
+            }
+
+            .layer-2 {
+              position: absolute;
+              -webkit-clip-path: inset(100% 0 0 0);
+                      clip-path: inset(100% 0 0 0);
+              height: 100%;
+              width: 100%;
+              left: 0;
+              top: 0;
+              z-index: 3;
+              -webkit-transition: 0.6s;
+              -o-transition: 0.6s;
+              transition: 0.6s;
+
+              .left {
+                h4 {
+                  color: white;
+                }
+
+                p {
+                  color: var(--lime-500) !important;
+                }
+
+                span {
+                  color: var(--gray-400) !important;
+                }
               }
 
               p:last-child {
-                font-size: 1.125rem;
-                line-height: 1.75rem;
-                font-weight: 700;
-                color: #b5b5b5;
-                -webkit-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                        transform: rotate(90deg);
-                width: -webkit-fit-content;
-                width: -moz-fit-content;
-                width: fit-content;
-                display: inline-block;
-                margin-right: -1.3125rem;
+                color: var(--lime-500) !important;
               }
             }
           }
+        }
+
+        & > div:not(& > div:first-child){
+            .inner{
+                .layers{
+                    .layer-content{
+                        p:last-child{
+                            left: 85%;
+                        }
+                    }
+                }
+            }
         }
       }
     }
@@ -922,16 +959,16 @@ h6 {
 
           .cards:last-child {
             padding: 1.875rem;
+            background-image: -o-linear-gradient(
+              left,
+              var(--lime-500),
+              var(--green-500)
+            );
             background-image: -webkit-gradient(
               linear,
               left top, right top,
               from(var(--lime-500)),
               to(var(--green-500))
-            );
-            background-image: -o-linear-gradient(
-              left,
-              var(--lime-500),
-              var(--green-500)
             );
             background-image: linear-gradient(
               to right,
@@ -1062,8 +1099,8 @@ h6 {
 
             input {
               -webkit-transform: scale(1.8);
-                  -ms-transform: scale(1.8);
-                      transform: scale(1.8);
+              -ms-transform: scale(1.8);
+              transform: scale(1.8);
             }
 
             label {
@@ -1096,8 +1133,8 @@ h6 {
             &::after {
               content: "";
               position: absolute;
-              background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
               background: -o-linear-gradient(left, #0000, #fff6, #0000);
+              background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
               background: linear-gradient(90deg, #0000, #fff6, #0000);
               height: 100%;
               width: 100%;
@@ -1148,7 +1185,6 @@ h6 {
   .container {
     & > div:first-child {
       .box:first-child {
-
         span {
           font-size: 1.25rem;
           font-weight: 700;
@@ -1180,7 +1216,6 @@ h6 {
       }
 
       .box:not(.box:first-child) {
-
         h5 {
           font-size: 1.25rem;
           font-weight: 700;
@@ -1204,19 +1239,19 @@ h6 {
       }
     }
 
-    .bottom{
-      border-top: 0.0625rem solid var(--gray-800) ;
+    .bottom {
+      border-top: 0.0625rem solid var(--gray-800);
 
-      p{
+      p {
         color: var(--gray-400);
       }
 
-      .right{
-        a{
+      .right {
+        a {
           text-decoration: none;
           color: var(--gray-400);
 
-          &:hover{
+          &:hover {
             color: var(--lime-500);
           }
         }
@@ -1228,48 +1263,47 @@ h6 {
 @-webkit-keyframes spin_R_TO_L {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   to {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 @keyframes spin_R_TO_L {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   to {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 @-webkit-keyframes spin_L_TO_R {
   from {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   to {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes spin_L_TO_R {
   from {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   to {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
-

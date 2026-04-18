@@ -663,6 +663,7 @@ h6 {
 }
 #main #CONTACT-US .row > div:last-child form .checkbox {
   margin-left: 0.3438rem;
+  gap: 15px;
 }
 #main #CONTACT-US .row > div:last-child form .checkbox input {
   transform: scale(1.8);

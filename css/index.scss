@@ -94,7 +94,8 @@ h6 {
       );
       background-image: -webkit-gradient(
         linear,
-        left top, right top,
+        left top,
+        right top,
         from(var(--lime-500)),
         to(transparent)
       );
@@ -117,7 +118,8 @@ h6 {
       );
       background-image: -webkit-gradient(
         linear,
-        right top, left top,
+        right top,
+        left top,
         from(var(--lime-500)),
         to(transparent)
       );
@@ -233,7 +235,14 @@ h6 {
             content: "";
             position: absolute;
             background: -o-linear-gradient(left, #0000, #fff6, #0000);
-            background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
+            background: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#0000),
+              color-stop(#fff6),
+              to(#0000)
+            );
             background: linear-gradient(90deg, #0000, #fff6, #0000);
             height: 100%;
             width: 100%;
@@ -255,7 +264,13 @@ h6 {
     background-image:
       -o-linear-gradient(rgba(0, 0, 0, 0.85)), url(../images/image01.jpg);
     background-image:
-      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85))), url(../images/image01.jpg);
+      -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.85))
+      ),
+      url(../images/image01.jpg);
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.85)), url(../images/image01.jpg);
     background-position: center center;
@@ -311,7 +326,14 @@ h6 {
                 content: "";
                 position: absolute;
                 background: -o-linear-gradient(left, #0000, #fff6, #0000);
-                background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
+                background: -webkit-gradient(
+                  linear,
+                  left top,
+                  right top,
+                  from(#0000),
+                  color-stop(#fff6),
+                  to(#0000)
+                );
                 background: linear-gradient(90deg, #0000, #fff6, #0000);
                 height: 100%;
                 width: 100%;
@@ -350,7 +372,8 @@ h6 {
             );
             background-image: -webkit-gradient(
               linear,
-              left top, right top,
+              left top,
+              right top,
               from(var(--lime-500)),
               to(var(--green-500))
             );
@@ -443,7 +466,8 @@ h6 {
                     );
                     background-image: -webkit-gradient(
                       linear,
-                      left top, left bottom,
+                      left top,
+                      left bottom,
                       color-stop(40%, transparent),
                       to(var(--lime-500))
                     );
@@ -681,7 +705,8 @@ h6 {
       );
       background-image: -webkit-gradient(
         linear,
-        left top, right top,
+        left top,
+        right top,
         from(transparent),
         color-stop(10%, var(--lime-500)),
         color-stop(90%, var(--lime-500)),
@@ -710,7 +735,8 @@ h6 {
       overflow: hidden;
       -webkit-mask-image: -webkit-gradient(
         linear,
-        left top, right top,
+        left top,
+        right top,
         from(transparent),
         color-stop(20%, rgba(0, 0, 0, 1)),
         color-stop(80%, rgba(0, 0, 0, 1)),
@@ -725,7 +751,8 @@ h6 {
       );
       mask-image: -webkit-gradient(
         linear,
-        left top, right top,
+        left top,
+        right top,
         from(transparent),
         color-stop(20%, rgba(0, 0, 0, 1)),
         color-stop(80%, rgba(0, 0, 0, 1)),
@@ -787,7 +814,7 @@ h6 {
           .inner {
             &:hover .layer-2 {
               -webkit-clip-path: inset(0 0 0 0);
-                      clip-path: inset(0 0 0 0);
+              clip-path: inset(0 0 0 0);
             }
 
             .layers {
@@ -845,8 +872,8 @@ h6 {
                   top: 32%;
                   left: 80%;
                   -webkit-transform: translateY(-50%);
-                      -ms-transform: translateY(-50%);
-                          transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
                   font-size: 1.125rem;
                   line-height: 1.75rem;
                   font-weight: 700;
@@ -865,14 +892,14 @@ h6 {
             .layer-1 {
               position: relative;
               -webkit-filter: grayscale(100%);
-                      filter: grayscale(100%);
+              filter: grayscale(100%);
               z-index: 2;
             }
 
             .layer-2 {
               position: absolute;
               -webkit-clip-path: inset(100% 0 0 0);
-                      clip-path: inset(100% 0 0 0);
+              clip-path: inset(100% 0 0 0);
               height: 100%;
               width: 100%;
               left: 0;
@@ -903,16 +930,16 @@ h6 {
           }
         }
 
-        & > div:not(& > div:first-child){
-            .inner{
-                .layers{
-                    .layer-content{
-                        p:last-child{
-                            left: 85%;
-                        }
-                    }
+        & > div:not(& > div:first-child) {
+          .inner {
+            .layers {
+              .layer-content {
+                p:last-child {
+                  left: 85%;
                 }
+              }
             }
+          }
         }
       }
     }
@@ -966,7 +993,8 @@ h6 {
             );
             background-image: -webkit-gradient(
               linear,
-              left top, right top,
+              left top,
+              right top,
               from(var(--lime-500)),
               to(var(--green-500))
             );
@@ -1096,6 +1124,7 @@ h6 {
 
           .checkbox {
             margin-left: 0.3438rem;
+            gap: 15px;
 
             input {
               -webkit-transform: scale(1.8);
@@ -1134,7 +1163,14 @@ h6 {
               content: "";
               position: absolute;
               background: -o-linear-gradient(left, #0000, #fff6, #0000);
-              background: -webkit-gradient(linear, left top, right top, from(#0000), color-stop(#fff6), to(#0000));
+              background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(#0000),
+                color-stop(#fff6),
+                to(#0000)
+              );
               background: linear-gradient(90deg, #0000, #fff6, #0000);
               height: 100%;
               width: 100%;

@@ -43,7 +43,10 @@
     height: 20rem;
     overflow: hidden;
   }
-  #main #OUR-GAMES, #main #WHAT-WE-DO, #main #OUR-TEAM, #main #CONTACT-US {
+  #main #OUR-GAMES,
+  #main #WHAT-WE-DO,
+  #main #OUR-TEAM,
+  #main #CONTACT-US {
     padding-block: var(--pad-mid);
   }
 }
@@ -185,193 +188,33 @@
 }
 @media (max-width: 25rem) {
   .section-name-global > span:first-child {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .section-name-global h2 {
-    font-size: 45px;
+    font-size: 2.8125rem;
     margin-top: 0;
   }
   .section-name-global p {
-    font-size: 16px;
-  }
-  #main #CONTACT-US .row > div:first-child .inner {
-    gap: 1.875rem;
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:not(.cards:last-child) {
-    background-color: var(--slate-800);
-    padding: 1.875rem 1.875rem 3.4375rem;
+    font-size: 1rem;
   }
   #main #CONTACT-US .row > div:first-child .inner .cards:not(.cards:last-child) .icon {
-    height: 4rem;
-    width: 4rem;
-    background-color: var(--lime-500);
-    font-size: 1.5625rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.2625rem;
   }
   #main #CONTACT-US .row > div:first-child .inner .cards:not(.cards:last-child) .content h5 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.75rem;
-    color: var(--gray-100);
-    margin-bottom: 0;
+    font-size: 1.15rem;
   }
   #main #CONTACT-US .row > div:first-child .inner .cards:not(.cards:last-child) .content p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--gray-400);
-    margin-bottom: 0;
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:last-child {
-    padding: 1.875rem;
-    background-image: linear-gradient(to right, var(--lime-500), var(--green-500));
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:last-child h4 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    color: var(--dark-900);
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:last-child span {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--dark-900);
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:last-child .social div {
-    height: 3rem;
-    aspect-ratio: 1/1;
-    background-color: var(--dark-900);
-    cursor: pointer;
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:last-child .social div:hover {
-    opacity: 0.8;
-  }
-  #main #CONTACT-US .row > div:first-child .inner .cards:last-child .social div i {
-    font-size: 1.25rem;
-    color: var(--lime-500);
-  }
-  #main #CONTACT-US .row > div:last-child form {
-    background-color: var(--slate-800);
-    padding: 1.875rem;
-  }
-  #main #CONTACT-US .row > div:last-child form h4 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    color: var(--gray-100);
-    margin-bottom: 1.25rem;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) {
-    margin-bottom: 1.25rem;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div label {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-    color: var(--gray-200);
-    margin-bottom: 0.375rem;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div input,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div select,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea {
-    width: 100%;
-    padding: 0.6875rem 0.9375rem;
-    border: 0;
-    outline: none;
-    background-color: var(--gray-700);
-    color: white;
-    border: 0.1875rem solid #3b4656;
-    font-size: 0.9375rem;
-    resize: none;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div input option,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div select option,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea option {
-    color: #d9dadc;
-    font-size: 0.875rem;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div input::-moz-placeholder,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div select::-moz-placeholder,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea::-moz-placeholder {
-    color: #878e98;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div input::-moz-placeholder, #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div select::-moz-placeholder, #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea::-moz-placeholder {
-    color: #878e98;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div input::placeholder,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div select::placeholder,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea::placeholder {
-    color: #878e98;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div input:focus,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div select:focus,
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea:focus {
-    border-color: var(--lime-500);
-  }
-  #main #CONTACT-US .row > div:last-child form > div:not(.bottom) div textarea {
-    height: 9.375rem;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:nth-child(2) .left {
-    padding-right: 0.75rem;
-  }
-  #main #CONTACT-US .row > div:last-child form > div:nth-child(2) .right {
-    padding-left: 0.75rem;
+    font-size: 0.9rem;
   }
   #main #CONTACT-US .row > div:last-child form .checkbox {
-    margin-left: 0.3438rem;
+    gap: 10px;
   }
   #main #CONTACT-US .row > div:last-child form .checkbox input {
-    transform: scale(1.8);
+    transform: scale(1.4);
   }
   #main #CONTACT-US .row > div:last-child form .checkbox label {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: var(--gray-400);
-  }
-  #main #CONTACT-US .row > div:last-child form button {
-    width: 100%;
-    padding: 0.9375rem;
-    font-size: 1.125rem;
-    font-weight: 700;
-    background-color: var(--lime-500);
-    border: none;
-    margin-bottom: 1.5625rem;
-    transition: 0.5s;
-  }
-  #main #CONTACT-US .row > div:last-child form button:hover {
-    background-color: var(--bg-hover);
-  }
-  #main #CONTACT-US .row > div:last-child form button:hover::after {
-    left: 100%;
-  }
-  #main #CONTACT-US .row > div:last-child form button::after {
-    content: "";
-    position: absolute;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
-    height: 100%;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    z-index: 999999;
-    transition: 0.5s;
-  }
-  #main #CONTACT-US .row > div:last-child form button i {
-    font-size: 1rem;
-    margin-left: 0.5rem;
-  }
-  #main #CONTACT-US .row > div:last-child form .bottom {
-    border-top: 0.0625rem solid var(--gray-700);
-  }
-  #main #CONTACT-US .row > div:last-child form .bottom div p {
-    color: var(--lime-500);
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-  #main #CONTACT-US .row > div:last-child form .bottom div span {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: var(--gray-400);
-    margin-top: -0.125rem;
-    display: block;
+    font-size: 0.775rem;
   }
 }/*# sourceMappingURL=index.mid.css.map */
